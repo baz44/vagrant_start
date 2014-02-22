@@ -51,7 +51,7 @@ class puppet::server {
   # initialize a template file then ignore
   file { '/vagrant/nodes.pp':
     ensure  => present,
-    replace => false,
+    replace => true,
     source  => 'puppet:///modules/puppet/nodes.pp',
   }
 
